@@ -7,3 +7,5 @@ end
 get '/*/' do |path|
 	send_file File.join(settings.public_folder, path, 'index.html')
 end
+
+run Sinatra::Application
