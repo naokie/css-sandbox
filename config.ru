@@ -1,4 +1,9 @@
 require 'rubygems'
 require 'sinatra'
-get('/') { open('public/index.html').read }
-run Sinatra::Application
+
+get '/' do
+	send_file File.join(settings.public_folder, 'index.html')
+end
+get '/*/' do |path|
+	send_file File.join(settings.public_folder, path, 'index.html')
+end
