@@ -1,0 +1,530 @@
+/* =============================================================================
+   Primary Style
+   ========================================================================== */
+section {
+	padding-top: 60px;
+}
+
+/* =============================================================================
+   Table Style
+   ========================================================================== */
+#table-style .row {
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+
+/* #table1
+   ========================================================================== */
+#table1 {
+	border: 1px solid #2d0f09;
+	border-collapse: collapse;
+	color: #f6ecef;
+	width: 100%;
+}
+#table1 .t_top th {
+	background-color: #35140c;
+	border: 1px dashed #a84673;
+	font-weight: bold;
+	padding: .5em;
+	text-align: left;
+}
+#table1 .t_line1 td {
+	background-color: #601a32;
+	border: 1px dashed #a84673;
+	padding: .5em;
+	text-align: left;
+	vertical-align: top;
+}
+#table1 .t_line2 td {
+	background-color: #752241;
+	border: 1px dashed #a84673;
+	padding: .5em;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* #table2
+   ========================================================================== */
+#table2 {
+	background-color: #fff;
+	border-top: 3px double #fff;
+	border-collapse: collapse;
+	color: #333;
+	width: 100%;
+}
+#table2 .t_top th {
+	background-color: #efefef;
+	border-bottom: 1px solid #dcdddd;
+	padding: .5em;
+	text-align: left;
+}
+#table2 .t_line1 td {
+	background-color: #fff;
+	padding: .5em;
+	text-align: left;
+	vertical-align: top;
+}
+#table2 .t_line2 td {
+	background-color: #f7f8f8;
+	padding: .5em;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* #table3
+   ========================================================================== */
+#table3 {
+	background-color: #fff;
+	border-left: 1px solid #ccc;
+	border-collapse: collapse;
+	color: #333;
+	width: 100%;
+}
+#table3 .t_top th {
+	background: url(../img/table-style/bg_header.jpg) #333;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	color: #fff;
+	padding: .5em;
+	text-align: center;
+}
+#table3 .t_line1 td {
+	background: url(../img/table-style/line1.gif) no-repeat #fff;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: .5em;
+	text-align: right;
+	vertical-align: top;
+}
+#table3 .t_line2 td {
+	background: url(../img/table-style/line2.gif) no-repeat #f2f2f2;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: .5em;
+	text-align: right;
+	vertical-align: top;
+}
+#table3 tr .no_img {
+	background-image: none;
+}
+
+/* =============================================================================
+   Calendar using jQuery UI and CSS3
+   ========================================================================== */
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker th,
+.ui-datepicker td {
+	border: 0;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+.ui-datepicker {
+	background: #141517;
+	cursor: default;
+	display: none;
+	font-family: Tahoma;
+	font-size: 12px;
+	padding: 35px;
+	text-transform: uppercase;
+	width: 294px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .1), inset 0 1px 1px rgba(0, 0, 0);
+	-moz-box-shadow: 0 1px 1px rgba(255, 255, 255, .1), inset 0 1px 1px rgba(0, 0, 0);
+	box-shadow: 0 1px 1px rgba(255, 255, 255, .1), inset 0 1px 1px rgba(0, 0, 0);
+}
+.ui-datepicker-header {
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 10px;
+	position: relative;
+}
+.ui-datepicker-title {
+	text-align: center;
+}
+.ui-datepicker-month {
+	color: #565656;
+	padding-right: 15px;
+	position: relative;
+}
+.ui-datepicker-month:before {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 5px;
+	height: 5px;
+	content: "";
+	background: #a5cd4e;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5cd4e), color-stop(100%, #6b8f1a));
+	background: -webkit-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+	background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+	background: -ms-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+	background: -o-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+	background: linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.ui-datepicker-year {
+	color: #a8a8a8;
+	padding-left: 8px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	position: absolute;
+	top: -2px;
+	padding: 5px;
+	cursor: pointer;
+}
+.ui-datepicker-prev {
+	left: 0;
+	padding-left: 0;
+}
+.ui-datepicker-next {
+	right: 0;
+	padding-right: 0;
+}
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+	background-image:url(../img/calendar-jquery-css3/arrows.png);
+	display: block;
+	width: 5px;
+	height: 10px;
+	text-indent: -999em;
+}
+.ui-datepicker-prev span {
+	background-position: 0 0;
+}
+.ui-datepicker-next span {
+	background-position: -5px 0;
+}
+.ui-datepicker-prev-hover span {
+	background-position: 0 -10px;
+}
+.ui-datepicker-next-hover span {
+	background-position: -5px -10px;
+}
+.ui-datepicker-calendar th {
+	color: #a8a8a8;
+	font-weight: normal;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.ui-datepicker-calendar td {
+	padding: 0 7px;
+	text-align: center;
+	line-height: 26px;
+}
+.ui-datepicker-calendar .ui-state-default {
+	display: block;
+	width: 26px;
+	outline: none;
+	text-decoration: none;
+	color: #a8a8a8;
+	border: 1px solid transparent;
+}
+.ui-datepicker-calendar .ui-state-active {
+	color: #6a9113;
+	border: 1px solid #6a9113;
+}
+.ui-datepicker-other-month .ui-state-default {
+	color: #565656;
+}
+
+/* =============================================================================
+   A Volume Controller with jQuery UI
+   ========================================================================== */
+#jquery-volumn-slider .well {
+	height: 200px;
+	background: url(../img/jquery-volumn-slider/bg.jpg) repeat left top;
+}
+#volume-controller {
+	width: 150px;
+	height: 25px;
+	margin: 50px auto 0;
+	position: relative;
+}
+#slider {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #333 #333 #777 #333;
+	border-radius: 25px;
+	width: 100px;
+	position: absolute;
+	height: 13px;
+	border-color: #8e8d8d;
+	background: url('../img/jquery-volumn-slider/bg-track.png') repeat left top;
+	box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, .5), 0 1px 0 0 rgba(250, 250, 250, .5);
+	left: 20px;
+}
+.volume-label {
+	position: absolute;
+	display: block;
+	top: -25px;
+	width: 35px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	font: 10pt Tahoma, Arial, sans-serif;
+	border-radius: 3px;
+	border: 1px solid #333;
+	-webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .3);
+	box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .3);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69, 72, 77, .5)), color-stop(100%, rgba(0, 0, 0, .5)));
+	background: -webkit-linear-gradient(top, rgba(69, 72, 77, .5) 0%, rgba(0, 0, 0, .5) 100%);
+	background: -moz-linear-gradient(top, rgba(69, 72, 77, .5) 0%, rgba(0, 0, 0, .5) 100%);
+	background: -ms-linear-gradient(top, rgba(69, 72, 77, .5) 0%, rgba(0, 0, 0, .5) 100%);
+	background: -o-linear-gradient(top, rgba(69, 72, 77, .5) 0%, rgba(0, 0, 0, .5) 100%);
+	background: linear-gradient(top, rgba(69, 72, 77, .5) 0%, rgba(0, 0, 0, .5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#80000000',GradientType=0 );
+}
+.volume {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	right: -5px;
+	background: url('../img/jquery-volumn-slider/volume.png') no-repeat 0 -50px;
+	position: absolute;
+	margin-top: -5px;
+}
+.ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: url('../img/jquery-volumn-slider/handle.png') no-repeat 50% 50%;
+	font-weight: bold;
+	color: #1c94c4;
+	outline: none;
+	top: -7px;
+	margin-left: -12px;
+}
+.ui-slider-range {
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #eaeaea));
+	background: -webkit-linear-gradient(top, #fff 0%, #eaeaea 100%);
+	background: -moz-linear-gradient(top, #fff 0%, #eaeaea 100%);
+	background: -ms-linear-gradient(top, #fff 0%, #eaeaea 100%);
+	background: -o-linear-gradient(top, #fff 0%, #eaeaea 100%);
+	background: linear-gradient(top, #fff 0%, #eaeaea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+	position: absolute;
+	border: 0;
+	top: 0;
+	height: 100%;
+	border-radius: 25px;
+}
+
+/* =============================================================================
+   A Sleek On/Off Button
+   ========================================================================== */
+#css3-on-off-button .well {
+	height: 200px;
+	background: url(../img/css3-on-off-button/micro_carbon.png) repeat left top;
+}
+#css3-on-off-button .section {
+	margin: 50px auto 0;
+	width: 75px;
+	height: 95px;
+	position: relative;
+	text-align: center;
+	z-index: 0;
+}
+@font-face {
+	font-family: "FontAwesome";
+	src: url("../font/fontawesome-webfont.eot");
+	src: url("../font/fontawesome-webfont.eot?#iefix") format('eot'),
+	    url("../font/fontawesome-webfont.woff") format('woff'),
+	    url("../font/fontawesome-webfont.ttf") format('truetype'),
+	    url("../font/fontawesome-webfont.svg#FontAwesome") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#button {
+	font-family: "FontAwesome";
+	text-shadow: 0 1px 1px rgba(250, 250, 250, .1);
+	font-size: 32pt;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	box-shadow: 0 3px 0 0 rgb(34, 34, 34),
+	            0 7px 10px 0 rgb(17, 17, 17),
+	            inset 0 1px 1px 0 rgba(250, 250, 250, .2),
+	            inset 0 -12px 35px 0 rgba(0, 0, 0, .5);
+	width: 70px;
+	height: 70px;
+	border: 0;
+	color: rgb(37, 37, 37);
+	border-radius: 35px;
+	text-align: center;
+	line-height: 79px;
+	background-color: rgb(83, 87, 93);
+	-webkit-transition: color 350ms ease, text-shadow: 350ms;
+	-moz-transition: color 350ms ease, text-shadow: 350ms;
+	-o-transition: color 350ms ease, text-shadow: 350ms;
+	transition: color 350ms ease, text-shadow: 350ms;
+}
+#button:before {
+	content: "";
+	width: 80px;
+	height: 80px;
+	display: block;
+	z-index: -2;
+	position: absolute;
+	background-color: rgb(26, 27, 29);
+	left: -5px;
+	top: -2px;
+	border-radius: 40px;
+	box-shadow: 0 1px 0 0 rgba(250, 250, 250, .1),
+	            inset 0 1px 2px rgba(0, 0, 0, .5);
+}
+#button:active {
+	box-shadow: 0 0 0 0 rgb(34, 34, 34),
+	            0 3px 7px 0 rgb(17, 17, 17),
+	            inset 0 1px 1px 0 rgba(250, 250, 250, .2),
+	            inset 0 -10px 35px 5px rgba(0, 0, 0, .5);
+	background-color: rgb(83, 87, 93);
+	top: 3px;
+}
+#button.on {
+	box-shadow: 0 0 0 0 rgb(34, 34, 34),
+	            0 3px 7px 0 rgb(17, 17, 17),
+	            inset 0 1px 1px 0 rgba(250, 250, 250, .2),
+	            inset 0 -10px 35px 5px rgba(0, 0, 0, .5);
+	background-color: rgb(83, 87, 93);
+	top: 3px;
+	color: #fff;
+	text-shadow: 0 0 3px rgb(250, 250, 250);
+}
+#button:active:before, #button.on:before {
+	top: -5px;
+	background-color: rgb(26, 27, 29);
+	box-shadow: 0 1px 0 0 rgba(250, 250, 250, .1),
+	            inset 0 1px 2px rgba(0, 0, 0, .5);
+}
+#button + span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: rgb(226, 0, 0);
+	box-shadow: inset 0 1px 0 0 rgba(250, 250, 250, .5),
+	            0 0 3px 2px rgba(226, 0, 0, .5);
+	border-radius: 4px;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	left: 42%;
+	-webkit-transition: background-color 350ms, box-shadow 700ms;
+	-moz-transition: background-color 350ms, box-shadow 700ms;
+	-o-transition: background-color 350ms, box-shadow 700ms;
+	transition: background-color 350ms, box-shadow 700ms;
+}
+#button.on + span {
+	box-shadow: inset 0 1px 0 0 rgba(250, 250, 250, .5),
+	            0 0 3px 2px rgba(135, 187, 83, .5);
+	background-color: rgb(135, 187, 83);
+}
+
+/* =============================================================================
+   Thumnails designed CSS3
+   ========================================================================== */
+.shadow-alpha {
+	box-shadow: 0 10px 8px -6px #8d8c8c;
+}
+.shadow-beta {
+	position: relative;
+	background-color: #fff;
+}
+.shadow-beta:after {
+	z-index: -1;
+	position: absolute;
+	content: '';
+	top: 80%;
+	bottom: 10px;
+	left: 10px;
+	width: 80%;
+	background-color: #8d8c8c;
+	box-shadow: 0 10px 10px #8d8c8c;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.shadow-gamma {
+	position: relative;
+	background-color: #fff;
+}
+.shadow-gamma:after {
+	z-index: -1;
+	position: absolute;
+	content: '';
+	top: 80%;
+	bottom: 10px;
+	left: 10px;
+	width: 80%;
+	background-color: #8d8c8c;
+	box-shadow: 0 10px 10px #8d8c8c;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.shadow-gamma:before {
+	z-index: -1;
+	position: absolute;
+	content: '';
+	top: 80%;
+	bottom: 10px;
+	right: 10px;
+	width: 80%;
+	background-color: #8d8c8c;
+	box-shadow: 0 10px 10px #8d8c8c;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+.shadow-delta {
+	position: relative;
+	background-color: #fff;
+}
+.shadow-delta:after {
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, .5),
+	            inset 0 0 100px rgba(0, 0, 0, .2);
+}
+.shadow-epsilon {
+	position: relative;
+	background-color: #fff;
+}
+.shadow-epsilon:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	right: 15px;
+	bottom: 0;
+	left: 15px;
+	box-shadow: 0 0 40px #8d8c8c;
+	border-radius: 100px/40px;
+}
